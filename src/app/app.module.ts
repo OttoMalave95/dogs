@@ -12,6 +12,7 @@ import en from '@angular/common/locales/en';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { ContentComponent } from './components/layout/content/content.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { BreedListComponent } from './components/dogs/breed-list/breed-list.component';
 
 registerLocaleData(en);
 
@@ -20,7 +21,8 @@ registerLocaleData(en);
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    BreedListComponent,
   ],
   imports: [
     BrowserModule,

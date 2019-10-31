@@ -1,0 +1,12 @@
+<div nz-row nzType="flex" nzJustify="center">
+  <div nz-col class="gutter-row" nzSpan="6" *ngFor="let breed of breedsList">
+    <div nz-row nzType="flex" nzJustify="center">
+      <nz-card nzHoverable class="card-image-size" [nzCover]="coverTemplate">
+        <nz-card-meta [nzTitle]="breed.title"></nz-card-meta>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <img class="dog-image" [alt]="breed.title" [src]="breed.image" />
+      </ng-template>
+    </div>
+  </div>
+</div>
