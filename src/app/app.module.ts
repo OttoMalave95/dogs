@@ -9,12 +9,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
+import { HeaderComponent } from './components/layout/header/header.component';
+import { ContentComponent } from './components/layout/content/content.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
