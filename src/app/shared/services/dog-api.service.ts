@@ -18,4 +18,8 @@ export class DogApiService {
   getBreedImage(breed: string): Observable<object> {
     return this.httpClient.get<object>(`${DOG_API_URL}/breed/${breed}/images/random`);
   }
+
+  getBreedImages(breed: string): Observable<object> {
+    return this.httpClient.get<object>(`${DOG_API_URL}/breed/${breed}/images`);
+  }
 }

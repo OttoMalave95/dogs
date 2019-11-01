@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { ContentComponent } from './components/layout/content/content.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { BreedListComponent } from './components/dogs/breed-list/breed-list.component';
+import { DogDetailComponent } from './components/dogs/dog-detail/dog-detail.component';
 
 registerLocaleData(en);
 
@@ -23,6 +24,7 @@ registerLocaleData(en);
     ContentComponent,
     FooterComponent,
     BreedListComponent,
+    DogDetailComponent,
   ],
   imports: [
     BrowserModule,

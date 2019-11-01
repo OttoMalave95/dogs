@@ -1,0 +1,15 @@
+<nz-page-header (nzBack)="onBack()" nzBackIcon [nzTitle]="breed"> </nz-page-header>
+
+<div nz-row nzType="flex" nzJustify="center">
+  <div nz-col class="gutter-row" nzSpan="6" *ngFor="let image of dogImages">
+    <div nz-row nzType="flex" nzJustify="center">
+      <nz-card nzHoverable class="card-image-size">
+        <img class="dog-image" alt="dog_image" [src]="image" />
+      </nz-card>
+    </div>
+  </div>
+
+  <div nz-col class="gutter-row" nzSpan="24" *ngIf="error">
+    <nz-alert nzType="error" [nzMessage]="error" nzShowIcon></nz-alert>
+  </div>
+</div>

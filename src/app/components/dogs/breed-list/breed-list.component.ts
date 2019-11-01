@@ -37,7 +37,6 @@ export class BreedListComponent implements OnInit {
             (dataBreedImage: any) => {
               const breedImage = dataBreedImage.message;
               this.breedsList.push({ title: breed, image: breedImage });
-              console.log('lista de raza: ', this.breedsList);
             },
             error => {
               this.error = 'Error al conectarse con el servidor';
